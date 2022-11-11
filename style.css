@@ -55,7 +55,8 @@ body{
     background-color: rgb(10, 147, 202);
     border-bottom-left-radius: 150px;
     border-bottom-right-radius: 150px;
-    transform-origin: bottom center;
+    transform-origin: top center;
+    animation: waterMove 5s linear infinite;
 }
 
 
@@ -107,4 +108,42 @@ img.fish{
     100%{
         transform: translate(0,0) rotate(0deg);
      }
+}
+
+
+@keyframes bowlmove {
+    0%{
+        transform: translate(-50%,-50%) rotate(0deg);
+     }
+     25%{
+        transform: translate(-50%,-50%) rotate(15deg);
+     }
+     50%{
+        transform: translate(-50%,-50%) rotate(0deg);
+     }
+     75%{
+        transform: translate(-50%,-50%) rotate(-15deg);
+     }
+     100%{
+        transform: translate(-50%,-50%) rotate(0deg);
+     }
+}
+
+
+@keyframes waterMove {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-20deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(20deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }
